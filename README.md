@@ -1,6 +1,8 @@
+<h3 align="center">Inception of things</h3>
+
 <!-- ABOUT THE PROJECT -->
-Contributrices : Hina Razanamasy and Alice Line
-Pre-requis : vagrant 2.3.4 et virtualBox 6.1
+#### Contributrices : Hina Razanamasy and Alice Line
+#### Pre-requis : vagrant 2.3.4 et virtualBox 6.1
 
 Ce projet m’a permis de découvrir l’orchestrateur de container Kubernetes, à travers K3S, la version light de K8S, ainsi que K3d, permettant d’installer nos clusters dans Docker.
 
