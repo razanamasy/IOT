@@ -1,8 +1,9 @@
 Vagrant.configure(2) do |config|
-  	config.vm.box = "martyV/centos9-stream"
+  	config.vm.box = "eurolinux-vagrant/centos-stream-9"
 
   # Kubernetes API Access
-  config.vm.network "forwarded_port", guest: 6443, host: 6443
+  config.vm.network "forwarded_port", guest: 6443, host: 1234
+  config.vm.network "forwarded_port", guest:80, host:8080
 
 
 	config.vm.define "hrazanamS" do |controlS|

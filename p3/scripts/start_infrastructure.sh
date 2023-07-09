@@ -4,7 +4,7 @@ echo "--set current context into argocd namespace--"
 kubectl config set-context --current --namespace=argocd
 
 echo "--create the app (pod deployment and start the service)--"
-argocd app create wil-playground --repo https://github.com/alilin2508/alilin.git --path wil-playground --dest-server https://kubernetes.default.svc --dest-namespace dev
+argocd app create wil-playground --repo https://github.com/razanamasy/hrazanam.git --path wil-playground --dest-server https://kubernetes.default.svc --dest-namespace dev
 
 echo "--sync --"
 kubectl create namespace dev
