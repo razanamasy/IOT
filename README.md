@@ -34,7 +34,7 @@ son pod, définit dans le deployment, ainsi que son service rattaché.
 C’est ici que le bon config-map sera appelé. 
 Par exemple le ConfigMap "app-one" est monté en tant que volume avec le nom "app-one-volume" et est monté dans le répertoire "/usr/share/nginx/html" du conteneur Nginx. Nginx va donc utiliser le bon fichier html selon l’app.
 
-Le service étant la couche au-dessus du pod composé d’une ip ET un port fixe afin de nous éviter de communiquer directement avec nos containers (les ip pouvant changer).
+rappel : Le service est la couche au-dessus du pod composé d’une ip ET un port fixe afin de nous éviter de communiquer directement avec nos containers (les ip pouvant changer).
 
 ### Ingress.yaml
 Traefik agit comme un point d'entrée et se charge de distribuer le trafic aux services appropriés en fonction des règles définies dans l'Ingress.
@@ -61,3 +61,21 @@ bash start_infrastructure.sh (deploiement de l’app, indication du github a arg
 networking : 
 accès à API argo cd : localhost:7894 ; (user = admin)
 accès à l’app : localhost:8081
+
+## Documentation
+### general kubernetes
+#### https://www.free-work.com/fr/tech-it/blog/actualites-informatiques/comprendre-kubernetes-conseils-et-outils-indispensables
+#### https://www.youtube.com/watch?v=VnvRFRk_51k
+#### https://kubernetes.io/docs/concepts/overview/
+#### https://geekflare.com/fr/kubernetes-architecture/
+#### https://www.youtube.com/watch?v=vFfngcRPj9M
+
+### K3S and K3D 
+#### https://www.youtube.com/watch?v=f10VP3pXbsI&list=PLn6POgpklwWqfzaosSgX2XEKpse5VY2v5&index=55
+#### https://thechief.io/c/editorial/k3s-vs-k3d/#:~:text=k3d%20is%20a%20wrapper%20of,prompt%20support%20for%20multiple%20clusters
+
+### ARGO CD
+#### https://codefresh.io/learn/argo-cd/#:~:text=Argo%20CD%20is%20a%20Kubernetes%20controller%2C%20responsible%20for%20continuously%20monitoring,specified%20in%20the%20Git%20repository
+#### https://argo-cd.readthedocs.io/en/stable/cli_installation/ 
+#### https://yashguptaa.medium.com/application-deploy-to-kubernetes-with-argo-cd-and-k3d-8e29cf4f83ee
+#### https://argo-cd.readthedocs.io/en/stable/getting_started/?_gl=1*xqdimc*_ga*MTU0MDA0NjYxLjE2NzUxNjQzNzM.*_ga_5Z1VTPDL73*MTY3NTE2NDM3My4xLjAuMTY3NTE2NDM3NS4wLjAuMA
