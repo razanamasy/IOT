@@ -4,7 +4,7 @@
 #### Contributrices : Hina Razanamasy and Alice Line
 #### Pre-requis : vagrant 2.3.4 et virtualBox 6.1
 
-Ce projet m’a permis de découvrir l’orchestrateur de container Kubernetes, à travers K3S, la version light de K8S, ainsi que K3d, permettant d’installer nos clusters dans Docker.
+Ce projet nous a permis de découvrir l’orchestrateur de container Kubernetes, à travers K3S, la version light de K8S, ainsi que K3d, permettant d’installer nos clusters dans Docker.
 
 Ce projet est composé de 3 parties :
 - Dans la première partie, il s’agit d’un simple set up de noeud master ainsi qu’un worker avec deux VMs (nous utilisons un Vagrantfile)
