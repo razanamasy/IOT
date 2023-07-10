@@ -42,7 +42,7 @@ Les services sont dans le même namespace et sont exposés sur le même port (80
 
 ### Accéder à une app : 
 #### Depuis le browser de l'hôte
-La VM est lancée avec une adresse static privée (192.168.56.110/24) en host-only. La machine host (généralement attribuée à 192.168.56.1/24) peut alors s’y connecter (bien verifier le firewall accepte la connexion depuis la machine hote)
+La VM est lancée avec une adresse static privée (192.168.56.110/24) en host-only. La machine host (généralement attribuée à 192.168.56.1/24) peut alors s’y connecter (bien verifier que le firewall de la guest accepte la connexion depuis la machine hote)
 
 #### Avec curl 
 curl -H "Host:app2.com" 192.168.56.110 (si host) ou localhost (si guest)
