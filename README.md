@@ -54,14 +54,15 @@ CICD avec ArgoCD et repos gitHub et K3D
 K3D permet de créer des cluster kubernetes dans Docker. 
 
 ### installation : 
-bash tools-installation.sh (installation docker engine, k3d, kubectl, argocd)
-bash create_infrastructure.sh (cr2ation cluster k3d avec mapping du loadbalancer : 80 dans le cluster a 8081 de la machine, creation namespace argocd avec les ressources dont le fichier est en remote https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml)
-Creation du mdp argo cd dans le fichier mdp_init :  kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d > mdp_init
-Port forward the argocd API to port 7894 :  kubectl port-forward service/argocd-server -n argocd 7894:443
-bash start_infrastructure.sh
-pull l’image will-playground : docker pull wil42/playground:v2
-bash start_infrastructure.sh (deploiement de l’app, indication du github a argocd)
-networking : 
+##### bash tools-installation.sh (installation docker engine, k3d, kubectl, argocd)
+##### bash create_infrastructure.sh (cr2ation cluster k3d avec mapping du loadbalancer : 80 dans le cluster a 8081 de la machine, creation namespace argocd avec les ressources dont le fichier est en remote https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml)
+##### Creation du mdp argo cd dans le fichier mdp_init :  kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d > mdp_init
+##### Port forward the argocd API to port 7894 :  kubectl port-forward service/argocd-server -n argocd 7894:443
+##### bash start_infrastructure.sh
+##### pull l’image will-playground : docker pull wil42/playground:v2
+##### bash start_infrastructure.sh (deploiement de l’app, indication du github a argocd)
+
+#### networking : 
 accès à API argo cd : localhost:7894 ; (user = admin)
 accès à l’app : localhost:8081
 
