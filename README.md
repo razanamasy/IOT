@@ -14,7 +14,6 @@ Ce projet est composé de 3 parties :
 - Bonus : CICD avec gitlab installé en local : sur une VM (voir vagrant file). Il est egalement possible d'installer gitLab dans le cluster avec Helm 
 
 <!-- GETTING STARTED -->
-Création de 3 app/3 services dans le même namespace exposé sur le même port 80, mais distinguées par son hôte, grâce à l’ingress Traeffik (point d’entrée du cluster)
 
 ## Part 1
 ### Installation
