@@ -38,7 +38,7 @@ rappel : Le service est la couche au-dessus du pod composé d’une ip ET un por
 ### Ingress.yaml
 Traefik agit comme un point d'entrée et se charge de distribuer le trafic aux services appropriés en fonction des règles définies dans l'Ingress.
 
-Les services sont dans le même namespace et sont exposés sur le même port (80), mais l'Ingress redirige le trafic en fonction de l'hôte, cela est possible grâce au fonctionnement de l'Ingress Controller et à la configuration de l'Ingress. Si l’on veux acceder au port 80 par default sans indiquer d’hôte, 
+Les services sont dans le même namespace et sont exposés sur le même port (80), mais l'Ingress redirige le trafic en fonction de l'hôte, cela est possible grâce au fonctionnement de l'Ingress Controller et à la configuration de dans ingress.yaml.
 
 ### Accéder à une app : 
 #### Depuis le browser de l'hôte
